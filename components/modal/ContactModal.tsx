@@ -11,7 +11,7 @@ interface ContactModalProps {
   onClose: () => void
 }
 
-export function ContactModal({ isOpen, onClose }: ContactModalProps) {
+const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -170,3 +170,6 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
     </div>
   )
 }
+
+
+export default ContactModal

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Play, Smartphone } from "lucide-react"
 import Image from "next/image"
 
-export function HeroSection() {
+const HeroSection = () => {
   return (
     <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 lg:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -85,3 +85,6 @@ export function HeroSection() {
     </section>
   )
 }
+
+
+export default HeroSection

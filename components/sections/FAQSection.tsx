@@ -2,7 +2,8 @@
 
 import { useState } from "react"
 import { ChevronDown, Mail } from "lucide-react"
-import { ContactModal } from "./contact-modal"
+import ContactModal from "../modal/ContactModal"
+
 
 const faqs = [
   {
@@ -47,7 +48,7 @@ const faqs = [
   },
 ]
 
-export function FAQSection() {
+const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
   const [isContactModalOpen, setIsContactModalOpen] = useState(false)
 
@@ -124,3 +125,5 @@ export function FAQSection() {
     </>
   )
 }
+
+export default FAQSection

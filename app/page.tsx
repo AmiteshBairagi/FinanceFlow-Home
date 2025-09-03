@@ -1,15 +1,16 @@
-import { LandingHeader } from "@/components/landing-header"
-import { HeroSection } from "@/components/hero-section"
-import { FeaturesSection } from "@/components/features-section"
-import { TestimonialsSection } from "@/components/testimonials-section"
-import { CTASection } from "@/components/cta-section"
-import { FAQSection } from "@/components/faq-section"
-import { Footer } from "@/components/footer"
+import TestimonialsSection  from "@/components/sections/TestimonialsSection"
+
+import { Footer } from "@/components/footer/Footer"
+import { Header } from "@/components/header/Header"
+import HeroSection from "@/components/sections/HeroSection"
+import FeaturesSection from "@/components/sections/FeaturesSection"
+import CTASection from "@/components/sections/CTASection"
+import FAQSection from "@/components/sections/FAQSection"
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen">
-      <LandingHeader />
+      <Header/>
       <main>
         <HeroSection />
         <FeaturesSection />

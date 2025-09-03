@@ -56,7 +56,7 @@ const features = [
   },
 ]
 
-export function FeaturesSection() {
+const FeaturesSection = () => {
   const [activeTab, setActiveTab] = useState("dashboard")
 
   const activeFeature = features.find((feature) => feature.id === activeTab) || features[0]
@@ -133,3 +133,5 @@ export function FeaturesSection() {
     </section>
   )
 }
+
+export default FeaturesSection

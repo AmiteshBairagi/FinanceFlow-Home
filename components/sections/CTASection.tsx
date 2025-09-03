@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Smartphone } from "lucide-react"
 
-export function CTASection() {
+const CTASection = () => {
   return (
     <section className="py-12 sm:py-16 md:py-20 lg:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -57,3 +57,5 @@ export function CTASection() {
     </section>
   )
 }
+
+export default CTASection

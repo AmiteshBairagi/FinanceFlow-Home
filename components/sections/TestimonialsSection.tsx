@@ -50,7 +50,7 @@ const testimonials = [
   },
 ]
 
-export function TestimonialsSection() {
+const TestimonialsSection = () => {
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
@@ -133,3 +133,5 @@ export function TestimonialsSection() {
     </section>
   )
 }
+
+export default TestimonialsSection
