@@ -1,20 +1,34 @@
 "use client"
+import {api} from "@/api/index"
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { DollarSign, Eye, EyeOff } from 'lucide-react'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import { useRouter } from "next/navigation"
+import React, { useEffect, useState } from 'react'
+import {toast} from "react-toastify";
 
 const Login = () => {
+  const router = useRouter();
   const [showPassword, setShowPassword] = useState(false)
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle login logic here
+
+    const response = await api.auth.login(email,password);
+
+    if(response){
+      console.log(response);
+      
+      localStorage.setItem("access_token",response.data);
+
+      router.push("http://localhost:5000/dashboard");
+
+    }
     console.log("Login attempt:", { email, password })
   }
 
