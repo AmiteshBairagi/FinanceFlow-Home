@@ -24,9 +24,10 @@ const Login = () => {
     if(response){
       console.log(response);
       
-      localStorage.setItem("access_token",response.data);
+      
 
-      router.push("http://localhost:5000/dashboard");
+      router.push(`http://localhost:5000/dashboard?token=${response.data}`);
+      
 
     }
     console.log("Login attempt:", { email, password })

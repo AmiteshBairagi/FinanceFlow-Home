@@ -25,7 +25,7 @@ export const registerUser = async (payload: {
         if (response) {
             const message = response.data;
 
-            if(message === "User Saved In The Database Successfully"){
+            if (message === "User Saved In The Database Successfully") {
                 return message;
             }
         }
