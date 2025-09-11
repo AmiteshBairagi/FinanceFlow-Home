@@ -74,7 +74,7 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">Message Sent!</h3>
               <p className="text-muted-foreground">
-                Thank you for contacting us. We'll get back to you within 24 hours.
+                Thank you for contacting us. We&apos;ll get back to you within 24 hours.
               </p>
             </div>
           ) : (

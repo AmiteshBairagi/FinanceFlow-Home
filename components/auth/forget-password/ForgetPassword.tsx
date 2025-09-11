@@ -67,7 +67,7 @@ const ForgetPassword = () => {
                   </div>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  If an account with that email exists, you'll receive a password reset link shortly.
+                  If an account with that email exists, you&apos;ll receive a password reset link shortly.
                 </p>
                 <Button variant="outline" className="w-full bg-transparent" onClick={() => setIsSubmitted(false)}>
                   Send another email

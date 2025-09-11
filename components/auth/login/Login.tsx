@@ -7,8 +7,7 @@ import { Label } from '@/components/ui/label'
 import { DollarSign, Eye, EyeOff } from 'lucide-react'
 import Link from 'next/link'
 import { useRouter } from "next/navigation"
-import React, { useEffect, useState } from 'react'
-import {toast} from "react-toastify";
+import React, { useState } from 'react'
 
 const Login = () => {
   const router = useRouter();
@@ -96,7 +95,7 @@ const Login = () => {
             </form>
             <div className="mt-6 text-center">
               <p className="text-sm text-muted-foreground">
-                Don't have an account?{" "}
+                Don&apos;t have an account?{" "}
                 <Link href="/signup" className="text-primary hover:underline font-medium">
                   Sign up
                 </Link>

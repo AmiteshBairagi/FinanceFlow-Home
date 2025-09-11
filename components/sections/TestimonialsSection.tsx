@@ -89,7 +89,7 @@ const TestimonialsSection = () => {
                       <Star key={i} className="h-3 w-3 sm:h-4 sm:w-4 fill-accent text-accent" />
                     ))}
                   </div>
-                  <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4">"{testimonial.content}"</p>
+                  <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4">&quot;{testimonial.content}&quot;</p>
                   <div className="flex items-center space-x-3">
                     <Avatar className="h-8 w-8 sm:h-10 sm:w-10">
                       <AvatarImage src={testimonial.avatar || "/placeholder.svg"} alt={testimonial.name} />
