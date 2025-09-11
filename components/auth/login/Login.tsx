@@ -25,7 +25,7 @@ const Login = () => {
       
       
 
-      router.push(`http://localhost:5000/dashboard?token=${response.data}`);
+      router.push(`${process.env.FINANCEFLOW_MAIN_APP_URL}?token=${response.data}`);
       
 
     }
