@@ -10,6 +10,7 @@ import { useRouter } from "next/navigation"
 import React, { useState } from 'react'
 
 const Login = () => {
+  const afterLoginURL = process.env.NEXT_PUBLIC_FINANCEFLOW_MAIN_APP_URL;
   const router = useRouter();
   const [showPassword, setShowPassword] = useState(false)
   const [email, setEmail] = useState("")
@@ -25,7 +26,7 @@ const Login = () => {
       
       
 
-      router.push(`${process.env.FINANCEFLOW_MAIN_APP_URL}?token=${response.data}`);
+      router.push(`${afterLoginURL}?token=${response.data}`);
       
     }
     console.log("Login attempt:", { email, password })
