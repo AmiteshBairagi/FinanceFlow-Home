@@ -27,7 +27,6 @@ const Login = () => {
 
       router.push(`${process.env.FINANCEFLOW_MAIN_APP_URL}?token=${response.data}`);
       
-
     }
     console.log("Login attempt:", { email, password })
   }
